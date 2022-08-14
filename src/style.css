@@ -193,4 +193,17 @@ nav ul li a{
 }
 
 /* offers */
+/* ------------Empty Styling */
 
+/* Contact */
+.contact_row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact_left_col,.contact_right_col{
+    flex-basis: 50%;
+}
+.contact_right_col img{
+    width: 100%;
+}
