@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website Demo_1</title>
     <link rel="stylesheet" href="./src/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
     <!-- <script>
         function menu(){
             var side = document.getElementById("sidenav");
@@ -37,12 +39,12 @@
 
     <nav id="sidenav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">features</a></li>
-            <li><a href="#">courses</a></li>
-            <li><a href="#">offer</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#fetures">features</a></li>
+            <li><a href="#cources">courses</a></li>
+            <li><a href="#offer">offer</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
     <img src="./public/img/menu.png" alt="logo" id="menulogo">
@@ -167,6 +169,58 @@
         </div>
     </section>
 
+    <!-- Footer -->
+
+    <section id="footer">
+        <div class="container footer_row">
+            <hr>
+            <div class="footer_left_col">
+                <div class="footer_link">
+                    <div class="link_title">
+                        <h4>Product</h4>
+                        <small>Our Plan</small><br>
+                        <small>Free Trial</small>
+                    </div>
+                    <div class="link_title">
+                        <h4>About Us</h4>
+                        <small>Request Demo</small><br>
+                        <small>FAQS</small>
+                    </div>
+                    <div class="link_title">
+                        <h4>Support</h4>
+                        <small>Features</small><br>
+                        <small>Contact Us</small>
+                    </div>
+                    <div class="link_title">
+                        <h4>Explor</h4>
+                        <small>Find a nonprofit</small><br>
+                        <small>Coporate Soluation</small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_right_col">
+                <div class="footer_info">
+                    <div class="copyright_text">
+                        <small>support@Xypo.com</small><br>
+                        <small>copyright 2022</small>
+                    </div>
+                    <div class="footer_logo">
+                        <img src="./public/img/logo.png" alt="logo"><br>
+                        <button class="conform_btn">Singn Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- social icons -->
+    <div class="social_icons">
+        <img src="./public/img/facebook.png" alt="logo">
+        <img src="./public/img/instagram.png" alt="logo">
+        <img src="./public/img/twitter.png" alt="logo">
+        <img src="./public/img/linkedin.png" alt="logo">
+    </div>
+
     <script>
         var menulogo = document.getElementById("menulogo");
         var side = document.getElementById("sidenav");
@@ -178,6 +232,10 @@
                 side.style.right = "-250px"
             }
         }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+    });
     </script>
 </body>
 </html>

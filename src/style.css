@@ -229,3 +229,143 @@ form input{
     flex-basis: 48%;
     padding: 18px 0px;
 }
+
+/* footer */
+
+#footer{
+    padding: 50px 0px 30px;
+}
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #f67c92;
+}
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer_left_col{
+    flex-basis: 50%;
+    margin-top: 50px;
+}
+.footer_right_col{
+    flex-basis: 35%;
+}
+.footer_link{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.link_title h4{
+    color: #fab3c4;
+    margin-bottom: 20px;
+}
+.link_title small{
+    font-size: 13px;
+    color: #777;
+}
+.footer_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+.footer_logo img{
+    width: 100px;
+}
+.footer_logo button{
+    padding: 12px 38px;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+/* social icons */
+
+.social_icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.social_icons img{
+    width: 20px;
+    display:block;
+    margin: 0px auto 20px;
+    cursor: pointer;
+}
+
+/* media query for responsive website */
+
+@media only screen and (max-width:770px){
+    #header{
+        background-image: none;
+    }
+    .container{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .logo{
+        margin-top: 25px;
+        width: 60px;
+    }
+    .header-text{
+        /* max-width: 350px; */
+        text-align: justify;
+        margin-top: 100px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    #menulogo{
+        width: 30px;
+        right: 50x;
+    }
+    .conform_btn{
+        padding: 15px 20px;
+    }
+    .social_icons img{
+        width: 14px;
+        margin: 15px auto;
+    }
+    .about_col_left,.about_col_right{
+        flex-basis: 100%;
+    }
+    .about_text{
+        margin: 50px 50px 0px;
+        display: inline-block;
+    }
+    .about_text h2{
+        font-size: 18px;
+    }
+    .feture_col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .cources_col_left{
+        flex-basis: 100%;
+    }
+    .cources_col_right{
+        flex-basis: 100%;
+        margin-top: 70px;
+    }
+    .contact_left_col{
+        flex-basis: 100%;
+    }
+    .contact_right_col{
+        flex-basis: 100%;
+        margin-top: 70px;
+    }
+    .footer_right_col,.footer_left_col{
+        flex-basis: 100%;
+    }
+    .link_title{
+        flex-basis: 50%;
+        margin-bottom: 30px;
+    }
+}
