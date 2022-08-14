@@ -216,5 +216,16 @@ form input{
     padding: 12px 10px;
     margin-bottom: 5px;
     outline: none;
-    border: 1px solid #f67c92;
+    border: 2px solid #f67c92;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+.btn_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn_box button{
+    flex-basis: 48%;
+    padding: 18px 0px;
 }
