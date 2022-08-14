@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Demo_1</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- <script>
+        function menu(){
+            var side = document.getElementById("sidenav");
+            if(side.style.right == "-250px"){
+                side.style.right = "0px";
+            }else{
+                side.style.right = "-250px"
+            }
+        }
+    </script> -->
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="./public/img/logo.png" alt="logo" class="logo">
+            <div class="header-text">
+                <h1>The Purpose is to <br> tech , bring learing to pepole</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur maxime ducimus quis porro ut? Harum nisi consequatur molestiae pariatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ad.</p>
+                <button class="conform_btn">Read More</button>
+                <div class="line">
+                    <span class="line_1"></span><br>
+                    <span class="line_2"></span><br>
+                    <span class="line_3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav id="sidenav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">features</a></li>
+            <li><a href="#">courses</a></li>
+            <li><a href="#">offer</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    <img src="./public/img/menu.png" alt="logo" id="menulogo">
+
+    <!-- Abbout section -->
+
+    <section id="about">
+        <div class="about_col_left">
+            <img src="./public/img/about.png" alt="">
+        </div>
+        <div class="about_col_right">
+            <div class="about_text">
+                <h1>About us</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloribus minima blanditiis ratione commodi sit pariatur vel facilis incidunt provident recusandae, perspiciatis voluptatibus inventore, cupiditate dolorum! Perferendis eaque tempora libero necessitatibus nam debitis, optio reprehenderit cupiditate quidem veritatis.</p><br>
+                <div class="line">
+                    <span class="line_1"></span><br>
+                    <span class="line_2"></span><br>
+                    <span class="line_3"></span>
+                </div><br>
+                <h2>"Learning is not attained by chance , it must be sought for with ardor and attended to with diligence"</h2>
+                <h3>-----Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fetures -->
+
+    <section id="fetures">
+        <div class="feture_row">
+            <div class="feture_col">
+                <img src="./public/img/pic-1.png" alt="pic">
+                <h4>Learn Anywhere</h4>
+                <p>Switch Between your computer,tableor mobile devies</p>
+            </div>
+            <div class="feture_col">
+                <img src="./public/img/pic-2.png" alt="pic">
+                <h4>Expert Teacher</h4>
+                <p>Learn Form Industry experts who are passionate about teaching.</p>
+            </div>
+            <div class="feture_col">
+                <img src="./public/img/pic-3.png" alt="pic">
+                <h4>Unlimited Access</h4>
+                <p>Chose what you'd like to learn form our extensive subcription library</p>
+            </div>
+        </div>
+        <div class="feture_btn">
+            <div class="line">
+                <span class="line_1"></span><br>
+                <span class="line_2"></span><br>
+                <span class="line_3"></span>
+            </div>
+            <button class="conform_btn">Read More</button>
+        </div>
+    </section>
+
+    <!-- Cources -->
+    <section id="cources">
+        <div class="container cources_row">
+            <div class="cources_col_left">
+                <div class="cources_text">
+                    <h1>Bowse Our Top<br>Cources</h1>
+                    <span class="square"></span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus expedita ducimus adipisci, accusantium quia ipsum, aperiam repellat praesentium mollitia facere cum! Sed architecto accusantium possimus amet sunt quas consequuntur quam.</p>
+                    <button class="conform_btn">Read More</button>
+                    <div class="line">
+                        <span class="line_1"></span><br>
+                        <span class="line_2"></span><br>
+                        <span class="line_3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="cources_col_right">
+                <img src="./public/img/course.png" alt="logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- offers -->
+    <section id="offers">
+        <div class="container">
+            <img src="./public/img/logo.png" alt="logo" class="logo">
+            <div class="header-text">
+                <h1>The Purpose is to <br> tech , bring learing to pepole</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur maxime ducimus quis porro ut? Harum nisi consequatur molestiae pariatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ad.</p>
+                <button class="conform_btn">Read More</button>
+                <div class="line">
+                    <span class="line_1"></span><br>
+                    <span class="line_2"></span><br>
+                    <span class="line_3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var menulogo = document.getElementById("menulogo");
+        var side = document.getElementById("sidenav");
+
+        menulogo.onclick = function(){
+            if(side.style.right == "-250px"){
+                side.style.right = "0px";
+            }else{
+                side.style.right = "-250px"
+            }
+        }
+    </script>
+</body>
+</html>
